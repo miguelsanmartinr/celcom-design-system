@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Status Indicators" subtitle="Online · Degradado · Offline · integraciones" viewport="700x240" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .card { background:#fff; border:1px solid #EEF1F6; border-radius:12px; padding:20px 22px; }
+  .row { display:flex; justify-content:space-between; align-items:center; padding:9px 0; border-top:1px solid #F4F6FB; font-size:12px; }
+  .row:first-child { border-top:none; }
+  .name { color:#3A4A6B; }
+  .state { display:inline-flex; align-items:center; gap:6px; font-weight:500; }
+  .dot { width:6px; height:6px; border-radius:50%; }
+  h3 { font-family: var(--font-heading); font-size:14px; font-weight:600; margin:0 0 10px; color:#0D1B33; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h3>Estado del sistema</h3>
+    <div class="row"><span class="name">SMS Gateway</span><span class="state" style="color:#15803D"><span class="dot" style="background:#15803D"></span>Online</span></div>
+    <div class="row"><span class="name">WhatsApp API</span><span class="state" style="color:#15803D"><span class="dot" style="background:#15803D"></span>Online</span></div>
+    <div class="row"><span class="name">Email Server</span><span class="state" style="color:#D97706"><span class="dot" style="background:#D97706"></span>Degradado</span></div>
+    <div class="row"><span class="name">N8N Workflows</span><span class="state" style="color:#15803D"><span class="dot" style="background:#15803D"></span>24/24 activos</span></div>
+    <div class="row"><span class="name">API Pública</span><span class="state" style="color:#B91C1C"><span class="dot" style="background:#B91C1C"></span>Offline</span></div>
+  </div>
+</body>
+</html>

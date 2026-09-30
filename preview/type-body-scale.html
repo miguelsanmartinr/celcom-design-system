@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Type" name="Body Scale" subtitle="Body · Caption · Overline · Mono" viewport="700x340" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background:#fff; font-family:var(--font-body); }
+  .row { display:flex; align-items:baseline; gap: 18px; padding: 12px 0; border-bottom: 1px solid var(--border-subtle); }
+  .row:last-child { border-bottom: 0; }
+  .label { min-width: 150px; flex-shrink:0; }
+  .chip { display:inline-block; background:rgba(0,87,184,.12); color:var(--celcom-primary); font-size:11px; font-weight:700; padding:2px 8px; border-radius: 999px; }
+  .meta { font-size: 10px; color: var(--fg-3); margin-top: 3px; }
+  .specimen { color: var(--fg-1); margin: 0; flex:1; line-height:1.5; }
+  .over { text-transform: uppercase; letter-spacing: .06em; font-weight: 700; color: var(--celcom-primary); font-size: 12px; }
+  .mono { font-family: var(--font-mono); background: var(--bg-3); padding: 2px 8px; border-radius: 4px; color: var(--celcom-primary-dark); }
+</style>
+</head>
+<body>
+  <div class="row"><div class="label"><span class="chip">Body Large</span><div class="meta">18px · 400 · Inter</div></div><p class="specimen" style="font-size:17px">Celcom es un integrador móvil de valor agregado que ofrece plataformas bidireccionales.</p></div>
+  <div class="row"><div class="label"><span class="chip">Body</span><div class="meta">16px · 400 · Inter</div></div><p class="specimen" style="font-size:15px">Conecta con tus clientes a través de la app de mensajería más utilizada en el mundo.</p></div>
+  <div class="row"><div class="label"><span class="chip">Caption</span><div class="meta">14px · 500</div></div><p class="specimen" style="font-size:13px;color:var(--fg-3)">Términos y condiciones · Política de privacidad · SUBTEL</p></div>
+  <div class="row"><div class="label"><span class="chip">Overline</span><div class="meta">12px · 700 · UPPER</div></div><p class="specimen"><span class="over">SERVICIO CHATBOT · WHATSAPP API</span></p></div>
+  <div class="row"><div class="label"><span class="chip">Mono</span><div class="meta">Fira Code · API keys</div></div><p class="specimen"><span class="mono">sk_live_celcom_a1b2c3</span></p></div>
+</body>
+</html>

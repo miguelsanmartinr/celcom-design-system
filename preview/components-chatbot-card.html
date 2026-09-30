@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Chatbot Card" subtitle="Card del bot · empresa · plan · consumo" viewport="760x180" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:12px; }
+  .card { background:#fff; border:1px solid #EEF1F6; border-radius:12px; padding:20px 22px; }
+  .head { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .ico { width:36px; height:36px; border-radius:9px; background:#F4F6FB; display:flex; align-items:center; justify-content:center; color:#3A4A6B; }
+  .name { font-size:13px; font-weight:600; color:#0D1B33; margin:0; }
+  .meta { font-size:11px; color:#7A8EAD; margin:2px 0 0; }
+  .state { color:#15803D; font-size:10px; font-weight:500; display:inline-flex; align-items:center; gap:5px; margin-left:auto; }
+  .state.alert { color:#D97706; } .state.susp { color:#B91C1C; }
+  .state .dot { width:6px; height:6px; border-radius:50%; background:currentColor; }
+  .ftr { border-top:1px solid #F4F6FB; padding-top:12px; }
+  .row { display:flex; justify-content:space-between; margin-bottom:6px; font-size:11px; }
+  .row .l { color:#7A8EAD; } .row .r { color:#0D1B33; font-weight:600; font-feature-settings:'tnum'; }
+  .bar { background:#F4F6FB; border-radius:9999px; height:5px; overflow:hidden; }
+  .fill { height:100%; border-radius:9999px; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="card">
+      <div class="head">
+        <div class="ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4M8 14h.01M16 14h.01M9 18h6"/></svg></div>
+        <div><p class="name">Asistente Farmacia Central</p><p class="meta">Farmacia Central · Plan V2</p></div>
+        <span class="state alert"><span class="dot"></span>Alerta</span>
+      </div>
+      <div class="ftr">
+        <div class="row"><span class="l">Consumo mensual</span><span class="r">4.412 / 5.000</span></div>
+        <div class="bar"><div class="fill" style="width:88%; background:#D97706"></div></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="head">
+        <div class="ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4M8 14h.01M16 14h.01M9 18h6"/></svg></div>
+        <div><p class="name">Soporte MegaRetail</p><p class="meta">MegaRetail SpA · Plan V2</p></div>
+        <span class="state"><span class="dot"></span>Activo</span>
+      </div>
+      <div class="ftr">
+        <div class="row"><span class="l">Consumo mensual</span><span class="r">4.230 / 5.000</span></div>
+        <div class="bar"><div class="fill" style="width:85%; background:#0057B8"></div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Wizard Step Card" subtitle="Paso completado + activo" viewport="700x320" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .card { background:#fff; border-radius:12px; border:1px solid #EEF1F6; padding:22px 24px; margin-bottom:10px; }
+  .head { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .num { width:22px; height:22px; border-radius:50%; background:#E7EEF8; color:#0057B8; display:inline-flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; }
+  .num.done { background:#F6FBF5; color:#15803D; }
+  h3 { font-family: var(--font-heading); font-size:14px; font-weight:600; margin:0; }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+  label { font-size:11px; font-weight:600; color:#3A4A6B; text-transform:uppercase; letter-spacing:.04em; display:block; margin-bottom:6px; }
+  input, select { width:100%; padding:9px 12px; border-radius:7px; border:1px solid #EEF1F6; background:#FAFBFD; font-size:13px; color:#0D1B33; outline:none; font-family:var(--font-body); box-sizing:border-box; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="head"><span class="num done"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></span><h3>Datos de la empresa</h3></div>
+    <div class="grid">
+      <div><label>Nombre *</label><input value="Clínica del Sol SpA"></div>
+      <div><label>RUT *</label><input value="76.987.654-3"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="head"><span class="num">2</span><h3>Plan y configuración comercial</h3></div>
+    <div class="grid">
+      <div><label>Plan *</label><select><option>V2 — Plataforma de Clientes</option></select></div>
+      <div><label>Ejecutivo Celcom *</label><select><option>Carlos Merino</option></select></div>
+    </div>
+  </div>
+</body>
+</html>

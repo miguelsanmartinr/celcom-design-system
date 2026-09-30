@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Colors" name="Brand Colors" subtitle="Azul + Amarillo Celcom + gradiente" viewport="700x280" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:28px; background:#fff; font-family:var(--font-body); }
+  .row { display:grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .sw { border-radius: var(--radius-md); overflow:hidden; box-shadow: var(--shadow-sm); border:1px solid var(--border-subtle); }
+  .sw .color { height: 70px; display:flex; align-items:flex-end; padding:8px 10px; }
+  .sw .color span { font-family:var(--font-mono); font-size:11px; }
+  .sw .meta { padding: 8px 10px; background:#fff; border-top:1px solid var(--border-subtle); }
+  .sw .meta .name { font-size:var(--fs-xs); font-weight:700; color:var(--fg-1); }
+  .sw .meta .role { font-size:10px; color:var(--fg-3); margin-top:1px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw"><div class="color" style="background:#0057B8"><span style="color:#fff;opacity:.85">#0057B8</span></div><div class="meta"><div class="name">Primary</div><div class="role">Azul Celcom</div></div></div>
+    <div class="sw"><div class="color" style="background:#003D82"><span style="color:#fff;opacity:.85">#003D82</span></div><div class="meta"><div class="name">Primary Dark</div><div class="role">Hover / press</div></div></div>
+    <div class="sw"><div class="color" style="background:#3A82D4"><span style="color:#fff;opacity:.85">#3A82D4</span></div><div class="meta"><div class="name">Primary Light</div><div class="role">Links, focus</div></div></div>
+    <div class="sw"><div class="color" style="background:#001F5B"><span style="color:#fff;opacity:.85">#001F5B</span></div><div class="meta"><div class="name">Secondary</div><div class="role">Fondo profundo</div></div></div>
+    <div class="sw"><div class="color" style="background:#FFB800"><span style="color:#001F5B;opacity:.85">#FFB800</span></div><div class="meta"><div class="name">Accent ★</div><div class="role">Amarillo Celcom</div></div></div>
+    <div class="sw"><div class="color" style="background:#CC9200"><span style="color:#fff;opacity:.85">#CC9200</span></div><div class="meta"><div class="name">Accent Dark</div><div class="role">Hover accent</div></div></div>
+    <div class="sw"><div class="color" style="background:#FFD966"><span style="color:#001F5B;opacity:.85">#FFD966</span></div><div class="meta"><div class="name">Accent Light</div><div class="role">Gradiente</div></div></div>
+    <div class="sw"><div class="color" style="background:linear-gradient(135deg,#FFB800,#FFD966)"><span style="color:#001F5B;opacity:.85">gradient</span></div><div class="meta"><div class="name">Accent Gradient</div><div class="role">Banners trial</div></div></div>
+  </div>
+</body>
+</html>

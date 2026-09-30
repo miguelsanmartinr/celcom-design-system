@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Toasts" subtitle="Blanco · ícono sutil · sombra suave" viewport="700x180" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .grid { display:grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .toast { background:#fff; border-radius:10px; border:1px solid #EEF1F6; padding: 12px 14px; display:flex; gap:10px; box-shadow: 0 4px 12px rgba(13,27,51,.04); }
+  .ic { width:26px; height:26px; border-radius:7px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .body .t { font-weight:600; font-size:13px; color:#0D1B33; margin:0 0 2px; }
+  .body .m { font-size:11px; color:#7A8EAD; margin:0; }
+  .x { margin-left:auto; background:none; border:none; color:#9AACC8; font-size:16px; cursor:pointer; line-height:1; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="toast">
+      <div class="ic" style="background:#F6FBF5"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.2" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></div>
+      <div class="body"><p class="t">Cambios guardados</p><p class="m">Asistente Farmacia Central — hace 2s.</p></div>
+      <button class="x">×</button>
+    </div>
+    <div class="toast">
+      <div class="ic" style="background:#FFF7E0"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 20h20L12 2z"/><path d="M12 10v4M12 18h.01"/></svg></div>
+      <div class="body"><p class="t">Tope cercano</p><p class="m">588 conversaciones disponibles.</p></div>
+      <button class="x">×</button>
+    </div>
+    <div class="toast">
+      <div class="ic" style="background:#E7EEF8"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0057B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></div>
+      <div class="body"><p class="t">Credenciales enviadas</p><p class="m">admin@clinicasol.cl recibió el acceso.</p></div>
+      <button class="x">×</button>
+    </div>
+    <div class="toast">
+      <div class="ic" style="background:#FDECEC"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B91C1C" stroke-width="2" stroke-linecap="round"><path d="M15 9l-6 6M9 9l6 6"/><circle cx="12" cy="12" r="10"/></svg></div>
+      <div class="body"><p class="t">Sincronización fallida</p><p class="m">Google Drive: reintentando…</p></div>
+      <button class="x">×</button>
+    </div>
+  </div>
+</body>
+</html>

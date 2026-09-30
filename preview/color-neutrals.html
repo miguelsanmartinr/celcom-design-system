@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Colors" name="Neutrals" subtitle="Escala fría (tinte azul), n-50 → n-900" viewport="700x260" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:28px; background:#fff; font-family:var(--font-body); }
+  .row { display:grid; grid-template-columns: repeat(8, 1fr); gap: 8px; }
+  .sw { border-radius: var(--radius-md); overflow:hidden; border:1px solid var(--border-subtle); }
+  .sw .color { height: 60px; }
+  .sw .meta { padding: 6px 8px; background:#fff; border-top:1px solid var(--border-subtle); }
+  .sw .meta .name { font-size:10px; font-weight:700; color:var(--fg-1); }
+  .sw .meta .hex { font-size:9px; color:var(--fg-3); font-family:var(--font-mono); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw"><div class="color" style="background:#FFFFFF;border-bottom:1px solid var(--border-subtle)"></div><div class="meta"><div class="name">White</div><div class="hex">#FFFFFF</div></div></div>
+    <div class="sw"><div class="color" style="background:#FAFBFF"></div><div class="meta"><div class="name">n-50</div><div class="hex">#FAFBFF</div></div></div>
+    <div class="sw"><div class="color" style="background:#F4F6FB"></div><div class="meta"><div class="name">n-100</div><div class="hex">#F4F6FB</div></div></div>
+    <div class="sw"><div class="color" style="background:#E8EDF5"></div><div class="meta"><div class="name">n-200</div><div class="hex">#E8EDF5</div></div></div>
+    <div class="sw"><div class="color" style="background:#C7D2E6"></div><div class="meta"><div class="name">n-300</div><div class="hex">#C7D2E6</div></div></div>
+    <div class="sw"><div class="color" style="background:#9AACC8"></div><div class="meta"><div class="name">n-400</div><div class="hex">#9AACC8</div></div></div>
+    <div class="sw"><div class="color" style="background:#7A8EAD"></div><div class="meta"><div class="name">n-500</div><div class="hex">#7A8EAD</div></div></div>
+    <div class="sw"><div class="color" style="background:#3A4A6B"></div><div class="meta"><div class="name">n-700</div><div class="hex">#3A4A6B</div></div></div>
+  </div>
+  <div class="row" style="margin-top:10px; grid-template-columns: repeat(4, 1fr);">
+    <div class="sw"><div class="color" style="background:#0D1B33"></div><div class="meta"><div class="name">n-900</div><div class="hex">#0D1B33 — fg principal</div></div></div>
+    <div class="sw" style="grid-column: span 3"><div class="color" style="background:linear-gradient(90deg,#FAFBFF,#F4F6FB,#E8EDF5,#C7D2E6,#9AACC8,#7A8EAD,#3A4A6B,#0D1B33)"></div><div class="meta"><div class="name">Escala completa</div><div class="hex">Tinte azul cool — nunca grises puros</div></div></div>
+  </div>
+</body>
+</html>

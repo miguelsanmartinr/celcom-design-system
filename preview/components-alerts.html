@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Alerts" subtitle="Fondo tinte · ícono lineal · sin barra lateral" viewport="700x180" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .stack { display:flex; flex-direction:column; gap:8px; }
+  .alert { border-radius:8px; padding:10px 14px; display:flex; align-items:center; gap:10px; font-size:12px; font-weight:500; }
+  .alert svg { flex-shrink:0; }
+  .success { background:#F6FBF5; color:#15803D; }
+  .info    { background:#E7EEF8; color:#0057B8; }
+  .warn    { background:#FFF7E0; color:#B45309; }
+  .error   { background:#fff; color:#B91C1C; border:1px solid #F5D0D0; }
+</style>
+</head>
+<body>
+  <div class="stack">
+    <div class="alert success"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>N8N workflow activo y sin errores.</div>
+    <div class="alert info"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Verificación de WhatsApp en curso — toma 7 a 20 días hábiles.</div>
+    <div class="alert warn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 20h20L12 2z"/><path d="M12 10v4M12 18h.01"/></svg>Consumo al 88% del tope mensual — 588 conversaciones disponibles.</div>
+    <div class="alert error"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Error de autenticación — credenciales inválidas.</div>
+  </div>
+</body>
+</html>

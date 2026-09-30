@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Usage Meters" subtitle="Consumo del plan · azul / ámbar al 80%" viewport="700x260" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .card { background:#fff; border:1px solid #EEF1F6; border-radius:12px; padding:20px 22px; }
+  .meter { margin-bottom:14px; }
+  .meter:last-child { margin-bottom:0; }
+  .row { display:flex; justify-content:space-between; margin-bottom:6px; }
+  .label { font-size:13px; font-weight:500; color:#0D1B33; }
+  .value { font-size:11px; color:#7A8EAD; font-feature-settings:'tnum'; }
+  .bar { background:#F4F6FB; border-radius:9999px; height:5px; overflow:hidden; }
+  .fill { height:100%; border-radius:9999px; }
+  .alert { font-size:11px; color:#B45309; margin:4px 0 0; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="meter">
+      <div class="row"><span class="label">SMS Masivo</span><span class="value">43.200 / 50.000 mensajes</span></div>
+      <div class="bar"><div class="fill" style="width:86%; background:#D97706"></div></div>
+      <p class="alert">Alerta activada al 80% — excedente estimado: 180 conv.</p>
+    </div>
+    <div class="meter">
+      <div class="row"><span class="label">WhatsApp API</span><span class="value">6.800 / 10.000 conversaciones</span></div>
+      <div class="bar"><div class="fill" style="width:68%; background:#0057B8"></div></div>
+    </div>
+    <div class="meter">
+      <div class="row"><span class="label">Email Marketing</span><span class="value">12.000 / 50.000 envíos</span></div>
+      <div class="bar"><div class="fill" style="width:24%; background:#0057B8"></div></div>
+    </div>
+  </div>
+</body>
+</html>

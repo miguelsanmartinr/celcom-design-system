@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Buttons — Variants" subtitle="Primary · Secondary · Dark · Link · Danger · Icon" viewport="700x140" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:28px; background:#FAFBFD; font-family:var(--font-body); }
+  .row { display:flex; gap: 10px; flex-wrap:wrap; align-items:center; }
+  .btn { font-family:var(--font-body); font-weight:600; border-radius:8px; padding:9px 16px; border:1px solid transparent; cursor:pointer; font-size:13px; display:inline-flex; align-items:center; gap:6px; transition: background 150ms; }
+  .primary { background:#0057B8; color:#fff; border-color:#0057B8; }
+  .primary:hover { background:#003E84; }
+  .secondary { background:#fff; color:#3A4A6B; border-color:#EEF1F6; }
+  .secondary:hover { background:#FAFBFD; }
+  .dark { background:#0D1B33; color:#fff; border-color:#0D1B33; }
+  .link { background:transparent; color:#0057B8; border-color:transparent; padding:9px 4px; }
+  .danger { background:#fff; color:#B91C1C; border-color:#EEF1F6; }
+  .disabled { background:#F4F6FB; color:#9AACC8; border-color:#F4F6FB; cursor:not-allowed; }
+  .ic-btn { width:34px; height:34px; padding:0; justify-content:center; }
+  h5 { margin: 0 0 10px; font-size: 11px; text-transform: uppercase; letter-spacing:.06em; color:#7A8EAD; font-weight:600; }
+  .group { margin-bottom: 18px; }
+</style>
+</head>
+<body>
+  <div class="group">
+    <h5>Variantes</h5>
+    <div class="row">
+      <button class="btn primary"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>Nueva campaña</button>
+      <button class="btn secondary">Cancelar</button>
+      <button class="btn dark">Actualizar plan</button>
+      <button class="btn link">Ver configuración →</button>
+      <button class="btn danger">Revocar</button>
+      <button class="btn disabled">Deshabilitado</button>
+      <button class="btn secondary ic-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3A4A6B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/></svg></button>
+    </div>
+  </div>
+</body>
+</html>

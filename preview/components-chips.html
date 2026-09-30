@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Chips / Badges" subtitle="Canal · plan · ambiente · estado (dot + texto)" viewport="700x180" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:#FAFBFD; font-family:var(--font-body); }
+  .row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:14px; }
+  .chip { display:inline-flex; align-items:center; gap:6px; padding:3px 10px; border-radius:6px; font-size:11px; font-weight:500; background:#F4F6FB; color:#3A4A6B; }
+  .chip.pill { border-radius:9999px; padding:3px 9px; }
+  .env-live { background:#F4F6FB; color:#3A4A6B; border-radius:9999px; padding:2px 8px; font-size:10px; font-weight:500; }
+  .env-test { background:#FFF7E0; color:#B45309; border-radius:9999px; padding:2px 8px; font-size:10px; font-weight:500; }
+  .dot { width:6px; height:6px; border-radius:50%; }
+  .state { display:inline-flex; align-items:center; gap:6px; font-size:11px; font-weight:500; }
+  h5 { margin: 0 0 10px; font-size: 10px; text-transform: uppercase; letter-spacing:.06em; color:#7A8EAD; font-weight:600; }
+</style>
+</head>
+<body>
+  <h5>Canales / Planes</h5>
+  <div class="row">
+    <span class="chip">SMS</span>
+    <span class="chip">WhatsApp</span>
+    <span class="chip">Email</span>
+    <span class="chip">Web</span>
+    <span class="chip">Plan V1</span>
+    <span class="chip">Plan V2</span>
+    <span class="env-live">Live</span>
+    <span class="env-test">Test</span>
+  </div>
+  <h5>Estados</h5>
+  <div class="row">
+    <span class="state" style="color:#15803D"><span class="dot" style="background:#15803D"></span>Activo</span>
+    <span class="state" style="color:#15803D"><span class="dot" style="background:#15803D"></span>Enviada</span>
+    <span class="state" style="color:#0057B8"><span class="dot" style="background:#0057B8"></span>En proceso</span>
+    <span class="state" style="color:#D97706"><span class="dot" style="background:#D97706"></span>Alerta 88%</span>
+    <span class="state" style="color:#B91C1C"><span class="dot" style="background:#B91C1C"></span>Suspendido</span>
+    <span class="state" style="color:#9AACC8"><span class="dot" style="background:#9AACC8"></span>Borrador</span>
+  </div>
+</body>
+</html>

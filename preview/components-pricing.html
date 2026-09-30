@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Pricing Cards" subtitle="Starter / Pro (destacado) / Enterprise" viewport="700x400" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; align-items:stretch; }
+  .card { border-radius:12px; padding:22px 22px 20px; display:flex; flex-direction:column; position:relative; background:#fff; border:1px solid #EEF1F6; }
+  .hi { border-color:#0057B8; }
+  .badge { position:absolute; top:-9px; left:22px; background:#0057B8; color:#fff; font-size:10px; font-weight:600; padding:3px 10px; border-radius:9999px; }
+  .plan { font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.06em; margin:0 0 4px; color:#7A8EAD; }
+  .desc { font-size:12px; margin:0 0 16px; color:#7A8EAD; }
+  .price { font-family:var(--font-heading); font-size:30px; font-weight:700; line-height:1; color:#0D1B33; letter-spacing:-0.02em; }
+  .per { font-size:12px; color:#9AACC8; }
+  ul { margin:18px 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:8px; flex:1; font-size:12px; color:#3A4A6B; }
+  li { display:flex; align-items:center; gap:8px; }
+  li svg { color:#0057B8; flex-shrink:0; }
+  .cta { padding:9px 14px; border-radius:7px; font-size:12px; font-weight:600; cursor:pointer; font-family:var(--font-body); }
+  .cta-sec { background:#fff; color:#0057B8; border:1px solid #EEF1F6; }
+  .cta-pri { background:#0057B8; color:#fff; border:none; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="card">
+      <p class="plan">V1 Básico</p>
+      <p class="desc">Canal único, volumen moderado</p>
+      <div><span class="price">$49</span><span class="per"> /mes</span></div>
+      <ul>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>2.000 conversaciones</li>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>1 chatbot</li>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Soporte en horario</li>
+      </ul>
+      <button class="cta cta-sec">Seleccionar</button>
+    </div>
+    <div class="card hi">
+      <div class="badge">Recomendado</div>
+      <p class="plan">V2 Plataforma de Clientes</p>
+      <p class="desc">Omnicanal + N8N + KB</p>
+      <div><span class="price">$149</span><span class="per"> /mes</span></div>
+      <ul>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>5.000 conversaciones</li>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>3 chatbots con KB</li>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Workflows N8N</li>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Soporte prioritario</li>
+      </ul>
+      <button class="cta cta-pri">Activar V2</button>
+    </div>
+    <div class="card">
+      <p class="plan">V3 Enterprise</p>
+      <p class="desc">Volumen alto, SLA dedicado</p>
+      <div><span class="price">Custom</span></div>
+      <ul>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Conversaciones ilimitadas</li>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Bots ilimitados</li>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Integraciones a medida</li>
+        <li><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>CSM dedicado</li>
+      </ul>
+      <button class="cta cta-sec">Hablar con ventas</button>
+    </div>
+  </div>
+</body>
+</html>

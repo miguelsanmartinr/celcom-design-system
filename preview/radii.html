@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Spacing" name="Border Radii" subtitle="none → full" viewport="700x160" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background:#fff; font-family:var(--font-body); }
+  .grid { display:flex; gap: 18px; align-items:center; flex-wrap:wrap; }
+  .item { text-align:center; }
+  .sq { width: 56px; height: 56px; background: rgba(0,87,184,.12); border: 2px solid var(--celcom-primary); }
+  .name { font-size: 10px; color: var(--fg-3); margin: 6px 0 1px; }
+  .val { font-size: 10px; color: var(--fg-2); font-weight: 700; font-family: var(--font-mono); }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item"><div class="sq" style="border-radius:0"></div><p class="name">none</p><p class="val">0</p></div>
+    <div class="item"><div class="sq" style="border-radius:4px"></div><p class="name">sm</p><p class="val">4px</p></div>
+    <div class="item"><div class="sq" style="border-radius:8px"></div><p class="name">md</p><p class="val">8px</p></div>
+    <div class="item"><div class="sq" style="border-radius:12px"></div><p class="name">lg</p><p class="val">12px</p></div>
+    <div class="item"><div class="sq" style="border-radius:16px"></div><p class="name">xl</p><p class="val">16px</p></div>
+    <div class="item"><div class="sq" style="border-radius:24px"></div><p class="name">2xl</p><p class="val">24px</p></div>
+    <div class="item"><div class="sq" style="border-radius:9999px"></div><p class="name">full</p><p class="val">9999px</p></div>
+  </div>
+</body>
+</html>

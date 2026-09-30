@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Drive Source Field" subtitle="Conexión a Google Drive" viewport="520x260" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .card { background:#fff; border:1px solid #EEF1F6; border-radius:12px; padding:20px 22px; }
+  label { font-size:11px; font-weight:600; color:#3A4A6B; text-transform:uppercase; letter-spacing:.04em; display:block; margin-bottom:6px; }
+  .row { display:flex; gap:8px; }
+  input { flex:1; padding:9px 12px; border-radius:7px; border:1px solid #EEF1F6; background:#FAFBFD; font-size:13px; color:#0D1B33; outline:none; font-family:var(--font-body); }
+  .btn { background:#fff; color:#3A4A6B; border:1px solid #EEF1F6; padding:8px 14px; border-radius:7px; font-weight:500; font-size:12px; cursor:pointer; font-family:var(--font-body); }
+  .hint { font-size:11px; color:#9AACC8; margin:6px 0 0; display:flex; align-items:center; gap:6px; }
+  .hint svg { color:#15803D; }
+  .files { margin-top:14px; display:flex; flex-direction:column; gap:6px; }
+  .file { display:flex; align-items:center; gap:10px; padding:8px 10px; border-radius:7px; background:#FAFBFD; border:1px solid #EEF1F6; font-size:12px; color:#3A4A6B; }
+  .file .name { flex:1; color:#0D1B33; font-weight:500; }
+  .file .size { color:#9AACC8; font-feature-settings:'tnum'; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <label>Fuente de conocimiento (Google Drive)</label>
+    <div class="row">
+      <input value="Base_Conocimiento_FC_v3.pdf">
+      <button class="btn">Cambiar</button>
+    </div>
+    <p class="hint"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Última sincronización: hace 2 horas</p>
+    <div class="files">
+      <div class="file">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0057B8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+        <span class="name">Base_Conocimiento_FC_v3.pdf</span><span class="size">2.4 MB</span>
+      </div>
+      <div class="file">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0057B8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+        <span class="name">Horarios_Sucursales.xlsx</span><span class="size">112 KB</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

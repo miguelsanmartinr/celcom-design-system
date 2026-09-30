@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Integration Status List" subtitle="N8N · Gupshup · Drive · OpenAI" viewport="500x220" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .card { background:#fff; border:1px solid #EEF1F6; border-radius:12px; padding:20px 22px; }
+  h3 { font-family: var(--font-heading); font-size:14px; font-weight:600; margin:0 0 12px; }
+  .item { display:flex; align-items:center; gap:8px; padding:9px 11px; border-radius:7px; margin-bottom:6px; font-size:12px; }
+  .item.ok { background:#F6FBF5; color:#15803D; }
+  .item.warn { background:#FFF7E0; color:#B45309; }
+  .item.err { background:#fff; color:#B91C1C; border:1px solid #F5D0D0; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h3>Estado de integraciones</h3>
+    <div class="item ok"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>N8N workflow: activo y sin errores</div>
+    <div class="item ok"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Gupshup: +56 2 2345 6789 conectado</div>
+    <div class="item ok"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Google Drive: sincronizado (hace 2h)</div>
+    <div class="item warn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 20h20L12 2z"/><path d="M12 10v4M12 18h.01"/></svg>OpenAI: latencia elevada (avg 2.4s)</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Colors" name="Channel Colors" subtitle="WhatsApp / SMS / Email / Chatbot" viewport="700x200" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:28px; background:#fff; font-family:var(--font-body); }
+  .row { display:grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .ch { border-radius: var(--radius-lg); overflow:hidden; border:1px solid var(--border-subtle); }
+  .ch .color { height: 64px; display:flex; align-items:center; padding: 0 14px; color:#fff; font-weight:700; gap: 10px; }
+  .ch.email .color { color: #001F5B; }
+  .ch .meta { padding: 8px 12px; background:#fff; border-top:1px solid var(--border-subtle); }
+  .ch .meta .name { font-size:var(--fs-sm); font-weight:700; color:var(--fg-1); }
+  .ch .meta .hex { font-size:10px; color:var(--fg-3); font-family:var(--font-mono); }
+  .dot { width:14px; height:14px; border-radius:50%; background:rgba(255,255,255,.3); }
+  h5 { margin: 0 0 10px; font-size: var(--fs-xs); text-transform: uppercase; letter-spacing:.08em; color: var(--fg-3); font-weight:700; }
+</style>
+</head>
+<body>
+  <h5>Canales — color por producto</h5>
+  <div class="row">
+    <div class="ch"><div class="color" style="background:#25D366"><span class="dot"></span>WhatsApp</div><div class="meta"><div class="name">WhatsApp</div><div class="hex">#25D366</div></div></div>
+    <div class="ch"><div class="color" style="background:#0057B8"><span class="dot"></span>SMS</div><div class="meta"><div class="name">SMS</div><div class="hex">#0057B8</div></div></div>
+    <div class="ch email"><div class="color" style="background:#FFB800"><span class="dot" style="background:rgba(0,31,91,.25)"></span>Email</div><div class="meta"><div class="name">Email</div><div class="hex">#FFB800</div></div></div>
+    <div class="ch"><div class="color" style="background:#8B5CF6"><span class="dot"></span>Chatbot</div><div class="meta"><div class="name">Chatbot</div><div class="hex">#8B5CF6</div></div></div>
+  </div>
+</body>
+</html>

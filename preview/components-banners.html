@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Banners" subtitle="Alerta · info · error" viewport="700x260" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .wrap { display:flex; flex-direction:column; gap: 10px; }
+  .banner { border-radius: 10px; padding: 14px 18px; display:flex; align-items:center; gap: 14px; border:1px solid; }
+  .warn { background:#FFF7E0; border-color:#F3E3B8; }
+  .warn .title { color:#B45309; font-weight:600; font-size: 13px; margin: 0 0 2px; }
+  .warn .sub { color:#B45309; opacity:.75; font-size: 12px; margin: 0; }
+  .warn .cta { background:#D97706; color:#fff; border: none; padding: 7px 14px; border-radius: 7px; font-weight: 600; font-size: 12px; cursor: pointer; }
+  .info { background:#E7EEF8; border-color:#CFDDF1; }
+  .info .title { color:#0057B8; font-weight: 600; font-size: 13px; margin: 0 0 2px; }
+  .info .sub { color:#3A4A6B; font-size: 12px; margin: 0; }
+  .info .cta { background:#0057B8; color:#fff; border: none; padding: 7px 14px; border-radius: 7px; font-weight: 600; font-size: 12px; cursor:pointer; }
+  .err { background:#fff; border-color:#F5D0D0; }
+  .err .title { color:#B91C1C; font-weight:600; font-size:13px; margin:0 0 2px; }
+  .err .sub { color:#3A4A6B; font-size:12px; margin:0; }
+  .err .cta { background:#fff; color:#B91C1C; border:1px solid #F5D0D0; padding:6px 13px; border-radius:7px; font-weight:600; font-size:12px; cursor:pointer; }
+  .body { flex: 1; }
+  .ico { width:32px; height:32px; border-radius:8px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="banner warn">
+      <div class="ico" style="background:rgba(217,119,6,.15)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 20h20L12 2z"/><path d="M12 10v4M12 18h.01"/></svg></div>
+      <div class="body"><p class="title">Farmacia Central superó el 80% del tope mensual</p><p class="sub">Consumo: 4.412 / 5.000 conversaciones. Excedente estimado: 180 conv.</p></div>
+      <button class="cta">Ajustar tope</button>
+    </div>
+    <div class="banner info">
+      <div class="ico" style="background:rgba(0,87,184,.15)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0057B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></div>
+      <div class="body"><p class="title">Nuevo bot pendiente de activación</p><p class="sub">Clínica del Sol SpA — credenciales enviadas al administrador.</p></div>
+      <button class="cta">Ver detalle</button>
+    </div>
+    <div class="banner err">
+      <div class="ico" style="background:rgba(185,28,28,.1)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B91C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg></div>
+      <div class="body"><p class="title">API pública offline</p><p class="sub">Los endpoints /v1/messages están degradados desde las 10:42.</p></div>
+      <button class="cta">Ir al estado</button>
+    </div>
+  </div>
+</body>
+</html>

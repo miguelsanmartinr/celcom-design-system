@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Form Inputs" subtitle="Con hint, focus y estado de error" viewport="700x220" -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background:#FAFBFD; font-family:var(--font-body); color:#0D1B33; }
+  .row { display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .f { display:flex; flex-direction:column; gap:6px; }
+  label { font-size: 11px; font-weight:600; color:#3A4A6B; text-transform:uppercase; letter-spacing:.04em; }
+  input, select, textarea { padding: 9px 12px; border-radius: 7px; border: 1px solid #EEF1F6; font-size: 13px; font-family:var(--font-body); color:#0D1B33; background:#FAFBFD; outline:none; box-sizing:border-box; }
+  input:focus, select:focus, textarea:focus { border-color:#0057B8; background:#fff; }
+  input.err { border-color:#B91C1C; background:#fff; }
+  .hint { font-size:11px; color:#9AACC8; }
+  .err-msg { font-size:11px; color:#B91C1C; }
+  textarea { resize:none; height:70px; line-height:1.5; }
+  .full { grid-column: 1 / -1; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="f"><label>Nombre de la empresa</label><input value="Farmacia Central"></div>
+    <div class="f"><label>RUT</label><input value="76.123.456-7"></div>
+    <div class="f"><label>Plan contratado</label><select><option>V2 — Plataforma de Clientes</option><option>V1 — Básico</option></select></div>
+    <div class="f"><label>Teléfono</label><input class="err" value="+56 9 12345"><span class="err-msg">Número inválido</span></div>
+    <div class="f full"><label>Prompt del sistema</label><textarea>Eres el asistente virtual de Farmacia Central. Responde en español, con tono amable.</textarea></div>
+  </div>
+</body>
+</html>
